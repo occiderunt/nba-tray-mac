@@ -6,6 +6,9 @@ basketball in the menu bar and the day's games are right there. No window, no ta
 Built with Tauri 2 (Rust) and TypeScript. Scores come from the public ESPN
 scoreboard API, so there is no key to configure.
 
+
+ICONS IN SOURCE ARE FILLER ICONS. EITHER USE THE RELEASE OR RUN `scripts/make-icons.py`
+
 ## What it does
 
 - Menu bar menu grouped into **LIVE NOW**, **FINAL** and **TODAY**
