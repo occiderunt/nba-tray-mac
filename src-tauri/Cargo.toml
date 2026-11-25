@@ -1,0 +1,27 @@
+[package]
+name = "nba-tracker"
+version = "0.1.0"
+edition = "2021"
+description = "NBA live scores in the macOS menu bar"
+authors = ["Occiderunt"]
+license = "MIT"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon", "macos-private-api", "image-png"] }
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", features = ["json"] }
+chrono = { version = "0.4", features = ["serde"] }
+tokio = { version = "1", features = ["time"] }
+anyhow = "1"
+dirs = "5"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"

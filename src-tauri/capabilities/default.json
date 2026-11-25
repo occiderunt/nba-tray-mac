@@ -1,0 +1,6 @@
+{
+  "identifier": "default",
+  "description": "Capabilities for the settings window",
+  "windows": ["settings"],
+  "permissions": ["core:default", "opener:default"]
+}
